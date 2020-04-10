@@ -8,3 +8,11 @@ Result: #ore python progra##ing please
 
 '''
 
+good=input("Tell me sumthin good  ")
+symbol=input("Whats your sign? ")
+
+first=good[0]
+
+good=good.replace(first,symbol)
+
+print(good)

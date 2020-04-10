@@ -12,7 +12,7 @@ import math
 amount=float(input("How much you got? "))
 apr=float(input("Whats the return? "))
 years=float(input("How long invested? "))
-
+10
 finalVal=amount*math.pow((1+(apr/100)),years)
 
 print("You'll have: " + str(finalVal))
