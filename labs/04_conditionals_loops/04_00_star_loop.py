@@ -10,4 +10,11 @@ For example if n is 3, you print:
 
 '''
 
-n = 5
+
+n=int(input('How many rows? '))
+
+stars='*'
+
+for i in range(n):
+    print(stars*(i+1))
+

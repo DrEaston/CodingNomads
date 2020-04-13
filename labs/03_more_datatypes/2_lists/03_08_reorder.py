@@ -7,3 +7,12 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+my_list=[]
+for i in range(10):
+    my_list.append(input("Numbah please: ")) 
+    
+for x in range(5):
+    print(my_list[2*x+1])
+for x in range(4,-1,-1):
+    print(my_list[2*x])
+    

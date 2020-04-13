@@ -9,3 +9,15 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+
+noInputs=10
+count=0
+numbahList=[]
+while count<10:
+    numbah=input("Gimme a numbah: 4")
+    numbahList.append(int(numbah))
+    count+=1
+print(max(numbahList))
+
+ #   for item in numbahs:
+        

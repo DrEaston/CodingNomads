@@ -6,3 +6,15 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+my_str=input("Pls enter a string: ")
+my_dict={}
+
+for item in my_str:
+    if item==" ":
+        pass
+    else:
+        my_dict[item]=my_str.count(item)
+        
+print(my_dict)
+            

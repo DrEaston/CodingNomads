@@ -6,3 +6,10 @@ input = "hello world"
 result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
 
 '''
+
+userIn=input("Gimme a sentence: ")
+userIn=userIn.split()
+
+tupleList=tuple(userIn)
+
+print(tupleList)

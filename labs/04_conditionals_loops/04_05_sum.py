@@ -7,3 +7,16 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+
+first=int(input("First number? "))
+second=int(input("Second number? "))
+summ=0
+
+nums=first
+while nums<=second:
+    summ+=nums
+    nums+=1
+
+print(summ)
+    
+    

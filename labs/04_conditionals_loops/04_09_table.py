@@ -8,3 +8,13 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+
+count=0
+temp_str=""
+for i in range(50):
+    temp_str=temp_str+str(i)+" "
+    count +=1
+    if count==10:
+        print(temp_str)
+        count=0
+        temp_str=""

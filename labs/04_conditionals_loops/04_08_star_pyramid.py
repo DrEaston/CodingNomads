@@ -17,3 +17,10 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+
+n=int(input('How many rows? '))
+
+stars='*'
+
+for i in range(n):
+    print(stars*(i+1))
