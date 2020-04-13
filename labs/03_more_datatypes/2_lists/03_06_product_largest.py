@@ -13,11 +13,17 @@ come back to this task after you have learned about loops)
 noInputs=10
 count=0
 numbahList=[]
+product=1
 while count<10:
-    numbah=input("Gimme a numbah: 4")
+    numbah=input("Gimme a numbah: ")
     numbahList.append(int(numbah))
     count+=1
-print(max(numbahList))
+    product*=int(numbah)
+    
+print(numbahList)
+print("Max number: "+str(max(numbahList)))
+print("Product is: "+str(product))
+
 
  #   for item in numbahs:
         
