@@ -24,6 +24,4 @@ print(numbahList)
 print("Max number: "+str(max(numbahList)))
 print("Product is: "+str(product))
 
-
- #   for item in numbahs:
         
