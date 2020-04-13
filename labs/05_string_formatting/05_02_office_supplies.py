@@ -25,3 +25,8 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for element in office:
+    lastFirst=element['full_name'].split()[1].upper()+", "+element['full_name'].split()[0]
+    print(f"{lastFirst:<30}{element['item']}")
+    
