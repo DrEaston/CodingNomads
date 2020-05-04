@@ -8,3 +8,14 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+while True:
+    try:
+        x = int(input("enter a number: "))
+        y = int(input("another number: "))
+        print(x/y)
+        
+    except ValueError:
+        print(f"last entered value is not a number")
+        
+    except ZeroDivisionError:
+        print("can't divide by 0")

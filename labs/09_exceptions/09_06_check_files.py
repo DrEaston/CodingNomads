@@ -8,3 +8,12 @@ only if neither of them applies.
 '''
 
 file_name = 'integers.txt'
+
+try:
+    with open(file_name, 'r') as fin:
+        data=int(fin.readline())
+        print(data*data)
+except FileNotFoundError:
+        print("check file name and location")
+except ValueError:
+        print("check data type")

@@ -22,4 +22,38 @@ You have a folder containing three text files of books from Project Gutenberg:
 BONUS CHALLENGE: write a custom Exception that inherits from Exception and raise it if the
 first 100 characters of any of the files contain the string "Prince".
 
+
+I expect an Index Error when I try to get the first letter of an empty string. I'll catch it and just print nothing'
 '''
+import os
+class OhSnapThePrince(Exception):
+    pass
+
+with open("books/war_and_peace.txt","r") as fin:
+    text=fin.readlines()
+    
+with open("books/crime_and_punishment.txt","w") as fout:
+    fout.write("")
+    
+for filename in os.listdir("books/"):
+    with open("books/"+filename,"r") as fin:
+        try:
+            text=fin.readlines()
+            print(text[0][1])
+            princeCheck=text[0]+text[1]                    
+        except IndexError:
+            print("")
+            
+            
+            """
+        
+            Bonus
+            
+        if princeCheck.find("Prince",1,101) != -1:
+            raise OhSnapThePrince("I found the prince")
+                
+                
+                """
+            
+    
+    
