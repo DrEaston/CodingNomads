@@ -9,3 +9,9 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+
+
+import urllib.request
+with urllib.request.urlopen('http://codingnomads.co/') as response:
+   html = response.read()
+print(html)
