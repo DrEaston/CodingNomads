@@ -4,6 +4,11 @@
     
     <h1>Learning Entry</h1>
 
+    <h1>{{ entry.title }}</h1>
+    <p>{{ entry.published }}</p>
+    <p>{{ entry.text }}</p>
+
     <a href="{% url 'learning_logs:topics' %}">Back</a>
 
-{% endblock %}
+
+{% endblock content%}
